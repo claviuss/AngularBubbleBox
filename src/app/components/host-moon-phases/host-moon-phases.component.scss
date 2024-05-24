@@ -1,0 +1,125 @@
+.container {
+}
+
+.header {
+    padding: 15px;
+    display: flex;
+
+    .logo {
+        display: flex;
+
+        img {
+            margin-right: 15px;
+        }
+
+        .headline {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .text {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 16px;
+        }
+    }
+}
+
+.content {
+    padding: 15px;
+
+    display: flex;
+
+    .app {
+        min-width: 500px;
+        width: 500px;
+    }
+
+    .logs {
+        margin-left: 24px;
+        color: #fff;
+        padding-left: 24px;
+        border-left: 1px rgba(255, 255, 255, 0.4) solid;
+
+        .log-data {
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 10px;
+            }
+        }
+
+        .data {
+            margin-top: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            height: 250px;
+            overflow-y: scroll;
+            width: 100%;
+            pre{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.info-text {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.options {
+    display: flex;
+
+    .option {
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        border-radius: 50%;
+        position: relative;
+        background: #67939f;
+        margin-right: 20px;
+        transition: all 0.5s ease;
+
+        img {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 100%;
+        }
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0px 0px 15px 10px rgb(123 130 170 / 75%);
+        }
+    }
+}
+
+.external-app {
+    margin: 20px 0;
+
+    .name {
+        color: greenyellow;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    iframe {
+        border: 1px greenyellow solid;
+        width: 100%;
+        height: 700px;
+    }
+}
+
+pre {
+    text-wrap: wrap;
+}

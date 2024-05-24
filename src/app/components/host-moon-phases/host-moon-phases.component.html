@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <img src="assets/logo-1.svg" alt>
+            <div>
+                <div class="headline">Breaking Boundaries</div>
+                <div class="text">
+                    Unleashing the Potential of Micro Frontends <br>
+                    with Angular and iframes
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="app">
+            <div class="info-text">Choose Moon Phase:</div>
+
+            <div class="options">
+                <div *ngFor="let moonPhase of moonPhases" class="option"
+                    (click)="selectMoonPhase(moonPhase)">
+                    <img
+                        [src]="moonPhase.icon"
+                        alt></div>
+            </div>
+
+            <div class="external-app">
+                <div class="name">Application: bubble-box-angular-direc-aa5a4.web.app/moon-phase</div>
+                <iframe src="https://bubble-box-angular-direc-aa5a4.web.app/moon-phase"
+                    bubbleBox [message]="message$ | async"
+                    (iframeEvent)="onIframeEvent($event)"></iframe>
+            </div>
+        </div>
+        <div class="logs">
+            <div class="log-data">
+                <div class="title"><img src="assets/bubble-icon-1.svg" alt="*">
+                    Host App to Child App ⬇️</div>
+                <div class="data">
+                    <code><pre>{{ messagesToChildApp|json }}</pre></code>
+                </div>
+            </div>
+
+            <div class="log">
+                <div class="title"><img src="assets/bubble-icon-2.svg" alt="*">
+                    Child App to Host App ⬆️</div>
+                <div class="data">
+                    <code><pre>{{ messagesToHostApp|json }}</pre></code>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

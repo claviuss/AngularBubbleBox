@@ -1,0 +1,13 @@
+<p>host works!</p>
+
+
+
+<div class="container">
+
+</div>
+<iframe src="https://bubble-box-angular-direc-aa5a4.web.app/logo" frameborder="1" bubbleBox
+    [message]="message$ | async" (iframeEvent)="onIframeEvent($event)"></iframe>
+
+<button (click)="sendMessage()">Send Test</button>
+
+<pre>{{message$ | async | json}}</pre>

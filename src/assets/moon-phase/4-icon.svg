@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="64px" viewBox="0 0 48 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Fill 7</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About" transform="translate(-555.000000, -299.000000)" fill="#FFFFFF">
+            <g id="Group-13" transform="translate(345.000000, 299.000000)">
+                <path d="M258,31.9958154 C258,49.4625343 243.794549,63.6652282 226.141593,64 C226.769416,63.9748921 227.390442,63.9246763 228.00977,63.8828299 C217.365664,58.1749706 210,46.0646005 210,31.9958154 C210,17.9353995 217.365664,5.81666013 228.00977,0.117170132 C227.390442,0.0669543612 226.769416,0.0251078854 226.141593,0 C243.794549,0.334771806 258,14.5290964 258,31.9958154" id="Fill-7"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,48 @@
+<div class="content" bubbleBox [message]="message$ | async"
+    (iframeEvent)="onIframeEvent($event)">
+    <ng-container *ngIf="moonPhaseData; else empty">
+        <div class="picture">
+            <img [src]="moonPhaseData.picture" alt>
+        </div>
+        <div class="title">{{moonPhaseData.title}}</div>
+        <div class="description">{{moonPhaseData.description}}</div>
+
+        <form [formGroup]="moonPhaseForm">
+            <div class="form-group">
+                <label for="name">Date:</label>
+                <input formControlName="date" type="date" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Name:</label>
+                <input formControlName="name" placeholder="Name" type="email"
+                    id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea formControlName="message" id="message"
+                    name="message"></textarea>
+            </div>
+            <div>
+                <button type="submit" (click)="onSubmit()">Submit</button>
+            </div>
+        </form>
+
+        <div class="loading" *ngIf="loading">
+            <span class="loader"></span>
+            <span>Saving...</span>
+        </div>
+
+    </ng-container>
+
+    <ng-template #empty>
+        <div class="picture">
+            <img src="assets/moon-phase/1.svg" alt>
+        </div>
+        <div class="title">Please select a moon phase</div>
+
+    </ng-template>
+
+</div>
+
+
+

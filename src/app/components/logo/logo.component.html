@@ -1,0 +1,8 @@
+<ng-container bubbleBox [message]="message$ | async"
+    (iframeEvent)="onIframeEvent($event)">
+    <p>logo works!</p>
+
+    <button (click)="sendMessage()">Send Test</button>
+</ng-container>
+
+
